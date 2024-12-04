@@ -1,0 +1,5 @@
+services:
+  storybook:
+    image: arthureudeline/starbucks-tp-kit-storybook
+    ports: 
+      - 6006:80
