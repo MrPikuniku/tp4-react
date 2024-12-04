@@ -1,3 +1,5 @@
+import { ProductData } from "@arthur.eudeline/starbucks-tp-kit/types";
+
 export type NextPageProps<T = Record<string, string>> = {
   /**
    * The path parameters received 
@@ -15,3 +17,18 @@ export type ProductFiltersResult = {
   categoriesSlugs: string[];
   search?: string;
 };
+
+
+
+export type CartData = {
+  lines: ProductLineData[]
+}
+
+export type ProductLineData = {
+  product: ProductData
+  qty: number
+}
+
+
+
+
